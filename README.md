@@ -16,24 +16,25 @@ You are given bhp.csv which contains property prices in the city of banglore, In
 # AIM
 To detect and remove the outliers in the given data set and save the final data.
 # ALGORITHM
-### Step 1: Import the required packages(pandas,numpy,scipy)
+Step 1: Import the required packages(pandas,numpy,scipy)
 
-### Step 2: Read the given csv file
+Step 2: Read the given csv file
 
-### Step3: Convert the file into a dataframe and get information of the data.
+Step3: Convert the file into a dataframe and get information of the data.
 
-### Step 4: Remove the non numerical data columns using drop() method.
+Step 4: Remove the non numerical data columns using drop() method.
 
-### Step 5: Detect the outliers in the data set using z scores method.
+Step 5: Detect the outliers in the data set using z scores method.
 
-### Step 6: Remove the outliers by z scores and list manupilation or by using Interquartile Range(IQR)
+Step 6: Remove the outliers by z scores and list manupilation or by using Interquartile Range(IQR)
 
-### Step 7: Check if the outliersare removed from data set using graphical methods.
+Step 7: Check if the outliersare removed from data set using graphical methods.
 
-### Step 8: Save the final data set into the file
+Step 8: Save the final data set into the file
 
 # CODE
 ## bhp.csv
+```
 import numpy as np
 import pandas as pd
 from scipy import stats
@@ -50,8 +51,10 @@ print(df1)
 z = np.abs(stats.zscore(df))
 df1 = df1[(z < 3)]
 print(df1)
+```
 
 ## height_weight.csv
+```
 import numpy as np
 import pandas as pd
 from scipy import stats
@@ -73,6 +76,7 @@ q3 = df2.quantile(0.75)
 IQR = q3 - q1
 df2_new = df2[((df2 >= q1 - 1.5 * IQR) & (df2 <= q3 + 1.5 * IQR))]
 print(df2_new)
+```
 
 # OUTPUT
 ## bhp.csv
