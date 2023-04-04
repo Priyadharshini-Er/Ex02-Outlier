@@ -77,18 +77,15 @@ IQR = q3 - q1
 df2_new = df2[((df2 >= q1 - 1.5 * IQR) & (df2 <= q3 + 1.5 * IQR))]
 print(df2_new)
 ```
-
 # OUTPUT
 ## bhp.csv
 ![image](https://user-images.githubusercontent.com/119558093/229703367-2cca41f4-6a17-49a3-9aa6-124eea10932d.png)
 ![image](https://user-images.githubusercontent.com/119558093/229703436-84972743-be2f-43ab-b79a-bb374c7d3b1a.png)
 ![image](https://user-images.githubusercontent.com/119558093/229703551-73e26b14-bdfb-4fd9-b5c6-b142091e5dad.png)
-
 ## height_weight.csv
 ![image](https://user-images.githubusercontent.com/119558093/229703816-852df5ae-e520-46e6-9f50-850063cfe3b4.png)
 ![image](https://user-images.githubusercontent.com/119558093/229703883-fbd4a24a-0b4b-4af4-a496-4e3b6ca85fca.png)
 ![image](https://user-images.githubusercontent.com/119558093/229704000-fb2eb55b-4e0f-4cd3-a11b-3c0b6d414ef9.png)
-
 # RESULT
 Thus the required output is displayed.
 
