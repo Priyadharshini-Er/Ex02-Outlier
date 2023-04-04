@@ -31,7 +31,6 @@ Step 6: Remove the outliers by z scores and list manupilation or by using Interq
 Step 7: Check if the outliersare removed from data set using graphical methods.
 
 Step 8: Save the final data set into the file
-
 # CODE
 ## bhp.csv
 ```
@@ -52,7 +51,6 @@ z = np.abs(stats.zscore(df))
 df1 = df1[(z < 3)]
 print(df1)
 ```
-
 ## height_weight.csv
 ```
 import numpy as np
